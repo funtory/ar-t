@@ -21,7 +21,7 @@ html {
     width: 100%
 }
 body {
-    font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif;
     webkit-tap-highlight-color: #222
 }
 .btn,
@@ -36,9 +36,10 @@ h6 {
     font-family: 'Noto Sans KR', 'Helvetica Neue', Arial, sans-serif
 }
 hr {
-    border-color: #F05F40;
+    border-color: #5B5B5B;
     border-width: 3px;
-    max-width: 50px
+    margin-top: 30px;
+    max-width: 200px
 }
 hr.light {
     border-color: #fff
@@ -56,15 +57,108 @@ p {
     line-height: 1.5;
     margin-bottom: 20px
 }
+
 .bg-primary {
-    background-color: #F05F40
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/ar_t_homepage_02(background).png');
 }
+
+.bg-primary-mb {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/header.jpg');   
+}
+
+.bg-primary-mb p{
+    font-size: 20px;
+}
+
+
+
+.bg-secondary {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/ar_t_homepage_03(background).png');
+}
+
+.bg-secondary-mb {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/ar_t_homepage_02(background).png');   
+}
+
+.bg-tertiary {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/ar_t_homepage(background).png');
+}
+
+.bg-contact {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-color: #363839;  
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
+.portfolio {
+    background-color: #fff;
+}
+
+.bg-contact p {
+    color: #A4B0B3;
+}
+.bg-contact a {
+    color: #A4B0B3;
+}
+
 .bg-dark {
     background-color: #222;
     color: #fff
 }
 .text-faded {
-    color: rgba(255, 255, 255, .7)
+    color: #5B5B5B;
+    line-height: 1.6;
+    font-size: 25px;
 }
 section {
     padding: 100px 0
@@ -168,7 +262,6 @@ header {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url(../img/header.jpg);
     color: #fff
 }
 header .header-content {
@@ -220,7 +313,10 @@ header .header-content .header-content-inner p {
     }
 }
 .section-heading {
-    margin-top: 0
+    margin-top: 0;
+    color: #5B5B5B;
+    font-size: 35px;
+    font-weight: 700;
 }
 .service-box {
     max-width: 400px;
@@ -298,7 +394,7 @@ header .header-content .header-content-inner p {
     margin: 0 auto 20px
 }
 .text-primary {
-    color: #F05F40
+    color: #5B5B5B
 }
 .no-gutter>[class*=col-] {
     padding-right: 0;
@@ -415,3 +511,37 @@ img::-moz-selection {
     color: #fff;
     background: 0 0
 }
+
+.vidcover {
+  background: #000;
+  opacity: 0.0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: opacity 800ms ease 0.2s;
+  -moz-transition: opacity 800ms ease 0.2s;
+  -ms-transition: opacity 800ms ease 0.2s;
+  transition: opacity 800ms ease 0.2s;
+}
+
+.fullvid {
+  width: 1280px;
+  height: 720px;
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  z-index: -2;
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  -webkit-transition: all 400ms ease-out 400ms;
+  -moz-transition: all 400ms ease-out 400ms;
+  -ms-transition: all 400ms ease-out 400ms;
+  transition: all 400ms ease-out 400ms;
+}
+
