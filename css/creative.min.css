@@ -141,7 +141,7 @@ p {
 }
 
 .portfolio {
-    background-color: #fff;
+    background-color: #DDEEF0;
 }
 
 .bg-contact p {
@@ -158,10 +158,10 @@ p {
 .text-faded {
     color: #5B5B5B;
     line-height: 1.6;
-    font-size: 25px;
+    font-size: 30px;
 }
 section {
-    padding: 100px 0
+    padding: 40px 0
 }
 aside {
     padding: 50px 0
@@ -198,7 +198,7 @@ aside {
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 20px;
     color: #222
 }
 .navbar-default .nav>li>a:focus:hover,
@@ -315,8 +315,9 @@ header .header-content .header-content-inner p {
 .section-heading {
     margin-top: 0;
     color: #5B5B5B;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 700;
+    line-height: 1.6;
 }
 .service-box {
     max-width: 400px;
@@ -340,7 +341,7 @@ header .header-content .header-content-inner p {
     color: #fff;
     opacity: 0;
     display: block;
-    background: rgba(240, 95, 64, .9);
+    background: rgba(26, 162, 222, .9);
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -543,5 +544,9 @@ img::-moz-selection {
   -moz-transition: all 400ms ease-out 400ms;
   -ms-transition: all 400ms ease-out 400ms;
   transition: all 400ms ease-out 400ms;
+}
+
+.text-muted {
+    font-size: 20px;
 }
 
