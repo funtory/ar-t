@@ -40,7 +40,7 @@ hr {
     border-width: 3px;
     margin-top: 30px;
     margin-bottom: 30px;
-    max-width: 330px
+    max-width: 100px
 }
 hr.light {
     border-color: #fff
@@ -56,22 +56,30 @@ a:hover {
 p {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 20px
+    margin-bottom: 10px
 }
 
-.bg-primary {
+.full-height {
+  height: 100%;
+  min-height: 100%;
+  display: block;
+}
+
+.bg-pageone {
   position: relative;
-  width: 100%;
-  min-height: auto;
+  min-height: 100%;
+  height: 100%;
+  min-width: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/ar_t_homepage_02(background).png');
+  background-image: url('../img/1page_background.jpg');
+  padding: 2% 2% 2% 2%;
 }
 
-.bg-primary-mb {
+.bg-pageone-mb {
   position: relative;
   width: 100%;
   min-height: auto;
@@ -83,13 +91,25 @@ p {
   background-image: url('../img/header.jpg');   
 }
 
-.bg-primary-mb p{
+.bg-pageone-mb p{
     font-size: 20px;
 }
 
+.bg-pagetwo {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  min-width: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/two_shirt.png'),url('../img/2page_background.png');
+  padding: 2% 0 2% 0;
+}
 
-
-.bg-secondary {
+.bg-pagethree {
   position: relative;
   width: 100%;
   min-height: auto;
@@ -98,10 +118,11 @@ p {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/ar_t_homepage_03(background).png');
+  background-image: url('../img/3page_background.png');
+  padding: 2% 2% 2% 2%;
 }
 
-.bg-secondary-mb {
+.bg-pagethree-mb {
   position: relative;
   width: 100%;
   min-height: auto;
@@ -111,9 +132,10 @@ p {
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/ar_t_homepage_02(background).png');   
+  padding: 10% 2% 10% 2%;
 }
 
-.bg-tertiary {
+.bg-pagefour {
   position: relative;
   width: 100%;
   min-height: auto;
@@ -122,7 +144,86 @@ p {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/ar_t_homepage(background).png');
+  background-image: url('../img/4page_background.png');
+  padding: 2% 2% 2% 2%;
+}
+
+.bg-pagefive {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/5page_background.png');
+  padding: 2% 0 2% 0;
+}
+
+.bg-pagefive-mb {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-color: #D4EBEC;
+  padding: 2% 0 2% 0;
+}
+
+.bg-pagesix {
+ position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/6page_background.jpg');
+  padding: 2% 0 2% 0; 
+}
+
+.bg-pageseven {
+ position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/7page_background.png');
+  padding: 5% 0 2% 0; 
+}
+
+.bg-pageeight {
+ position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/8page_background.png');
+  padding: 5% 0 2% 0; 
+}
+
+.bg-pageeight-mb {
+ position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/8page_background.png');
+  padding: 2% 0 2% 0; 
 }
 
 .bg-contact {
@@ -134,11 +235,12 @@ p {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-color: #363839;  
+  background-color: #363839;
+  padding: 2% 2% 2% 2%;
 }
 
 .navbar-brand {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .portfolio {
@@ -161,9 +263,7 @@ p {
     line-height: 1.6;
     font-size: 30px;
 }
-section {
-    padding: 40px 0
-}
+
 aside {
     padding: 50px 0
 }
@@ -315,7 +415,7 @@ header .header-content .header-content-inner p {
 }
 .section-heading {
     margin-top: 0;
-    color: #5B5B5B;
+    color: #373838;
     font-size: 45px;
     font-weight: 700;
     line-height: 1.6;
@@ -323,7 +423,7 @@ header .header-content .header-content-inner p {
 
 .section-subheading {
     margin-top: 0;
-    color: #5B5B5B;
+    color: #373838;
     font-size: 30px;
     font-weight: 700;
     line-height: 1.6;
@@ -331,7 +431,7 @@ header .header-content .header-content-inner p {
 
 .service-box {
     max-width: 400px;
-    margin: 50px auto 0
+    margin: 30px auto 0
 }
 @media (min-width: 992px) {
     .service-box {
@@ -344,7 +444,7 @@ header .header-content .header-content-inner p {
 .portfolio-box {
     position: relative;
     display: block;
-    max-width: 650px;
+    max-width: 100%px;
     margin: 0 auto
 }
 .portfolio-box .portfolio-box-caption {
@@ -539,25 +639,15 @@ img::-moz-selection {
   transition: opacity 800ms ease 0.2s;
 }
 
-.fullvid {
-  width: 1280px;
-  height: 720px;
-  position: fixed;
-  bottom: 50%;
-  left: 50%;
-  z-index: -2;
-  -webkit-transform: translate(-50%, 50%);
-  -moz-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%);
-  transform: translate(-50%, 50%);
-  -webkit-transition: all 400ms ease-out 400ms;
-  -moz-transition: all 400ms ease-out 400ms;
-  -ms-transition: all 400ms ease-out 400ms;
-  transition: all 400ms ease-out 400ms;
-}
 
 .text-muted {
     font-size: 20px;
+    color: #5b5b5b;
+}
+
+.text-small {
+    font-size: 15px;
+    color: #373838;
 }
 
 .text-description {
@@ -571,3 +661,65 @@ img.centered {
     margin-right: auto;
 }
 
+.margin2 {
+  margin-top: 2%;
+}
+
+.margin5 {
+  margin-top: 5%;
+}
+
+.margin10 {
+  margin-top: 10%;
+}
+
+.margin20 {
+  margin-top: 20%;
+}
+
+.margin30 {
+  margin-top: 30%;
+}
+
+.margin40 {
+  margin-top: 40%;
+}
+
+.margin50 {
+  margin-top: 50%;
+}
+
+.margin60 {
+  margin-top: 60%;
+}
+
+.margin70 {
+  margin-top: 70%;
+}
+
+.margin80 {
+  margin-top: 80%;
+}
+
+.margin90 {
+  margin-top: 90%;
+}
+
+.margin100 {
+  margin-top: 100%;
+}
+
+
+.borderless td, .borderless th {
+    border: none !important;
+    text-align: left;
+}
+
+thead {
+  border-color:#5B5B5B;
+  border-bottom: 2px solid;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+}

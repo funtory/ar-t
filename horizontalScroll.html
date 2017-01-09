@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AR-T - 펀토리하우스의 특별한 매직 티셔츠</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	          	
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+			    navigation: {
+			    	'textColor': '#f2f2f2',
+		            'bulletsColor': '#ccc',
+			    	'position': 'right',
+			   		'tooltips': ['Page1', 'Page2', 'Page3', 'Page4', 'Page5', 'Page6', 'Page7', 'Page8']
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+	    });
+    </script>
+
+</head>
+<body>
+	<ul id="menu" class="hidden-xs hidden-sm">
+		<li data-menuanchor="page1" class="active">
+			<a class="" href="#page1">
+				<img class="" alt="Brand" src="img/black-logo.png">
+			</a>
+		</li>
+		<li data-menuanchor="page2"><a href="#page2">AR-T 소개</a></li>
+		<li data-menuanchor="page3"><a href="#page3">컨텐츠</a></li>
+		<li data-menuanchor="page4"><a href="#page4">다운로드</a></li>
+	</ul>
+
+	<div id="pagepiling">
+
+	    <div class="section" id="section1">
+	    	<div class="row">
+	    	
+        		<iframe class="fullvid" width="1280" height="720" src="https://player.vimeo.com/video/195744112?hd=1&amp;iv_load_policy=3&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;autoplay=1&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+
+    		</div>
+	    </div>
+	    	
+	    <div class="section bg-pageone hidden-sm hidden-xs" id="section2">
+			<div class="row">
+			    <div class="col-lg-3 text-center">
+			        <img src="img/1page_slug.png" alt="logo" height="auto" width="60%">
+			    </div>
+			    <div class="col-lg-6 text-center full-height intro">
+			        <img src="img/1page_logo.png" alt="logo" height="auto" width="60%">
+			         <h2 class="section-heading">핸드폰으로 보면 신기한 일이 일어나는 <br>매직 티셔츠 AR-T</h2>
+					<hr class="primary">
+					<p class="text-faded">언뜻 보면 평범한 티셔츠이지만<br>핸드폰 카메라로 비춰보는 순간 신기한 일들이 일어납니다!<br>뉴미디어 어린이 놀이터 펀토리하우스에서<br>특별한 매직티셔츠를 경험해보세요. </p>
+				</div>
+				<div class="col-lg-3 text-center">
+					<img src="img/1page_dog.png" alt="logo" height="auto" width="1000%">
+				</div>
+			</div>
+		</div>
+
+	    
+	</div>
+	
+    <script src="js/fullvid.js"></script>
+
+</body>
+</html>
